@@ -1,37 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title><%= title %></title>
-        <link rel="stylesheet" href="/css/home.css">
-        <script src="https://kit.fontawesome.com/1919d78298.js" crossorigin="anonymous"></script>
-    </head>
+<div id="habits-container">
+    <ul>
+        <li id="habit">
+            <p>Gym</p>
 
-    <body>
-        <h1><%= title %></h1>
-
-        <div id="container">
-            <nav>
-                <select id="view">
-                    <option value="daily" selected>Daily View</option>
-                    <option value="weekly">Weekly View</option>
-                </select>
-    
-                <div id="add"><i class="fa-solid fa-circle-plus"></i></div>
-            </nav>
-
-            <div id="habits-container">
-                <ul>
-                    <li id="habit">
-                        <p>Gym</p>
-
-                        <select id="status">
-                            <option value="done" selected>Done</option>
-                            <option value="not_done">Not done</option>
-                            <option value="none">None</option>
-                        </select>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </body>
-</html>
+            <select id="status">
+                <option value="none" selected>None</option>
+                <option value="done">Done</option>
+                <option value="not_done">Not done</option>
+            </select>
+        </li>
+    </ul>
+</div>
