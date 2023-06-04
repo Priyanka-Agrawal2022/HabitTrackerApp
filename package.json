@@ -1,0 +1,15 @@
+{
+  "name": "habit-tracker-app",
+  "version": "1.0.0",
+  "description": "A habit tracker web application.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priyanka Agrawal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
