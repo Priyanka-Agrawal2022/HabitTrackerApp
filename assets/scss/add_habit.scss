@@ -1,0 +1,28 @@
+form {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    input {
+        width: 250px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    #add-btn {
+        width: 80px;
+        padding: 10px 0;
+        background: linear-gradient(white, lightgrey);
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

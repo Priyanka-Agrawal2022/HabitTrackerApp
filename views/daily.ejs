@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/daily.css">
+
+<div id="habits-container">
+    <ul>
+        <% for(habit of habits_list) { %>
+            <li id="<%= habit._id %>" class="habit">
+                <p><%= habit.description %></p>
+
+                <select id="<%= habit._id %>" class="status">
+                    <option value="none" selected>None</option>
+                    <option value="done">Done</option>
+                    <option value="not_done">Not done</option>
+                </select>
+            </li>
+        <% } %>
+    </ul>
+</div>

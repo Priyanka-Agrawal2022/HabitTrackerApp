@@ -1,0 +1,27 @@
+#habits-container {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .habit {
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(aliceblue, beige);
+
+            p {
+                margin: 0;
+            }
+
+            .status {
+                padding: 5px;
+                border-radius: 5px;
+                font-weight: bold;
+                border: 2px solid black;
+            }
+        }
+    }
+}

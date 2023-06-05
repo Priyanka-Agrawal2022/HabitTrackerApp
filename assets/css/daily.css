@@ -1,0 +1,25 @@
+#habits-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#habits-container ul .habit {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(aliceblue, beige);
+}
+
+#habits-container ul .habit p {
+  margin: 0;
+}
+
+#habits-container ul .habit .status {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid black;
+}
