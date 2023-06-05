@@ -6,6 +6,10 @@ const expressLayouts = require('express-ejs-layouts');
 // use layouts before routes
 app.use(expressLayouts);
 
+// extract style and scripts from sub pages into the layout
+app.set('layout extractStyles', true);
+app.set('layout extractScripts', true);
+
 // use express router
 app.use('/', require('./routes'));
 
