@@ -14,6 +14,9 @@
 
             p {
                 margin: 0;
+                width: 40%;
+                max-width: 50%;
+                text-align: left;
             }
 
             .status {
@@ -21,6 +24,16 @@
                 border-radius: 5px;
                 font-weight: bold;
                 border: 2px solid black;
+                background-color: lightgrey;
+
+                option {
+                    font-weight: bold;
+                    background-color: white;
+                }
+            }
+
+            .delete, .update {
+                color: black;
             }
         }
     }

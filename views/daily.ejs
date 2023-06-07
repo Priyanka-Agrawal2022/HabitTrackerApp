@@ -6,12 +6,18 @@
             <li id="<%= habit._id %>" class="habit">
                 <p><%= habit.description %></p>
 
-                <select id="<%= habit._id %>" class="status">
-                    <option value="none" selected>None</option>
+                <select id="<%= habit._id %>" class="status" onchange="setStatus()">
+                    <option value="none">None</option>
                     <option value="done">Done</option>
-                    <option value="not_done">Not done</option>
+                    <option value="not done">Not Done</option>
                 </select>
+
+                <!-- <a class="update" href="/update?id=<%= habit._id %>"><i class="fa-solid fa-pen-to-square"></i></a> -->
+
+                <a class="delete" href="/delete?id=<%= habit._id %>"><i class="fa-solid fa-trash-can"></i></a>
             </li>
         <% } %>
     </ul>
 </div>
+
+<script src="/js/daily.js"></script>

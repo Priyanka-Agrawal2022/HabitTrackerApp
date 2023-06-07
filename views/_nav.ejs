@@ -1,8 +1,10 @@
 <nav>
-    <select id="view">
-        <option value="daily" selected>Daily View</option>
-        <option value="weekly">Weekly View</option>
+    <select id="view" onchange="window.location.href=this.value">
+        <option value="/">Daily View</option>
+        <option value="/weekly">Weekly View</option>
     </select>
 
     <a id="add" href="/add-habit"><i class="fa-solid fa-circle-plus"></i></a>
 </nav>
+
+<!-- <script src="/js/nav.js"></script> -->

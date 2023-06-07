@@ -28,6 +28,10 @@ body #container nav #view {
   font-weight: bold;
 }
 
+body #container nav #view option {
+  font-weight: bold;
+}
+
 body #container nav #add {
   color: white;
   font-size: 2rem;
