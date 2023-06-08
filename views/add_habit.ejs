@@ -3,5 +3,9 @@
 <form action="/create" method="POST">
     <p>What do you wanna track?</p>
     <input type="text" name="description" id="desc" placeholder="Type here...">
+    <input id="hidden" name="hidden" type="hidden">
     <input id="add-btn" type="submit" value="ADD">
+    <p id="back" onclick="goBack()">Go Back</p>
 </form>
+
+<script src="/js/add_habit.js"></script>

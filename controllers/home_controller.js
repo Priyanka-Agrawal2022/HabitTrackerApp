@@ -35,11 +35,13 @@ module.exports.addHabit = async function (req, res) {
 // create a habit & render the updated daily view
 module.exports.create = async function (req, res) {
     try {
-        const habit = await Habit.create({
+        await Habit.create({
             description: req.body.description
         });
 
-        return res.redirect('/');
+        let view = req.body.hidden;
+
+        return res.redirect(view);
     } catch (err) {
         console.log('Error:', err);
     }
@@ -64,14 +66,14 @@ module.exports.updateStatus = async function (req, res) {
     try {
         const habitId = req.query.id;
         const habitStatus = req.query.status;
+
         const habit = await Habit.findByIdAndUpdate(habitId,{
             status: habitStatus
         }, {
             new: true
         });
         
-        return res.status(200).json({habit: habit});
-        
+        return res.status(200).json({habit: habit});  
     } catch (err) {
         console.log('Error:', err);
     }
@@ -80,14 +82,14 @@ module.exports.updateStatus = async function (req, res) {
 module.exports.update = async function (req, res) {
     try {
         const habitId = req.query.id;
+        
         await Habit.findByIdAndUpdate(habitId,{
             description: req.body.description
         }, {
             new: true
         });
         
-        return res.redirect('back');
-        
+        return res.redirect('back');  
     } catch (err) {
         console.log('Error:', err);
     }
