@@ -80,13 +80,11 @@ module.exports.updateStatus = async function (req, res) {
 module.exports.update = async function (req, res) {
     try {
         const habitId = req.query.id;
-        const habit = await Habit.findByIdAndUpdate(habitId,{
+        await Habit.findByIdAndUpdate(habitId,{
             description: req.body.description
         }, {
             new: true
         });
-
-        console.log(habit);
         
         return res.redirect('back');
         
