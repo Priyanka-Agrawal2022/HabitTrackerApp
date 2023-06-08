@@ -69,8 +69,6 @@ module.exports.updateStatus = async function (req, res) {
         }, {
             new: true
         });
-
-        console.log(habit);
         
         return res.status(200).json({habit: habit});
         
@@ -82,12 +80,15 @@ module.exports.updateStatus = async function (req, res) {
 module.exports.update = async function (req, res) {
     try {
         const habitId = req.query.id;
-        const habitStatus = req.query.status;
         const habit = await Habit.findByIdAndUpdate(habitId,{
-            status: habitStatus
+            description: req.body.description
+        }, {
+            new: true
         });
+
+        console.log(habit);
         
-        return res.status(200).json({habit: habit});
+        return res.redirect('back');
         
     } catch (err) {
         console.log('Error:', err);

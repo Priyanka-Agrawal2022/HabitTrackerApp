@@ -13,11 +13,26 @@
   background: linear-gradient(aliceblue, beige);
 }
 
-#habits-container ul .habit p {
-  margin: 0;
-  width: 40%;
-  max-width: 50%;
-  text-align: left;
+#habits-container ul .habit form {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#habits-container ul .habit form .desc {
+  font-weight: bold;
+  border: none;
+  background-color: inherit;
+  width: 90%;
+  margin-right: 10px;
+}
+
+#habits-container ul .habit form .submit {
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: linear-gradient(white, lightgrey);
+  cursor: pointer;
 }
 
 #habits-container ul .habit .status {

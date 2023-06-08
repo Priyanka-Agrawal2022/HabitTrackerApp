@@ -12,11 +12,26 @@
             align-items: center;
             background: linear-gradient(aliceblue, beige);
 
-            p {
-                margin: 0;
-                width: 40%;
-                max-width: 50%;
-                text-align: left;
+            form {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+
+                .desc {
+                    font-weight: bold;
+                    border: none;
+                    background-color: inherit;
+                    width: 90%;
+                    margin-right: 10px;
+                }
+
+                .submit {
+                    font-weight: bold;
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    background: linear-gradient(white, lightgrey);
+                    cursor: pointer;
+                }
             }
 
             .status {
