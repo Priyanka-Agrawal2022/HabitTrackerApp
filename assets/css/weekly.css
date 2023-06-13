@@ -4,6 +4,16 @@
   margin: 0;
 }
 
+#habits-container ul #days {
+  padding: 5px;
+  margin: 5px;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(aliceblue, beige);
+}
+
 #habits-container ul .habit {
   padding: 5px;
   margin: 5px;
@@ -16,14 +26,12 @@
 #habits-container ul .habit form {
   display: flex;
   justify-content: space-between;
-  width: 50%;
 }
 
 #habits-container ul .habit form .desc {
   font-weight: bold;
   border: none;
   background-color: inherit;
-  width: 90%;
   margin-right: 10px;
 }
 

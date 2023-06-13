@@ -6,7 +6,7 @@
             <li id="<%= habit._id %>" class="habit">
                 <form action="/update?id=<%= habit._id %>" method="POST">
                     <input type="text" name="description" class="desc" value="<%= habit.description %>" required>
-                    <input type="submit" value="Update" class="submit">
+                    <input type="submit" value="Update" class="update">
                 </form>
 
                 <select id="<%= habit._id %>" class="status" onchange="setStatus()">

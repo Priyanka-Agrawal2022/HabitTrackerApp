@@ -7,7 +7,8 @@ const habitSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-    }
+    },
+    days: []
 }, {
     timestamps: true
 });
