@@ -1,18 +1,18 @@
 function setHidden() {
-    let hidden = document.querySelector('#hidden');
-    let view = document.querySelector('#view');
+  let hidden = document.querySelector("#hidden");
+  let view = document.querySelector("#view");
 
-    localStorage.setItem('view', view.value);
+  hidden.value = localStorage.getItem("view");
 
-    hidden.value = localStorage.getItem('view');
+  console.log(view);
 }
 
 setHidden();
 
 function goBack() {
-    let view = document.querySelector('#view');
+  let view = document.querySelector("#view");
 
-    localStorage.setItem('view', view.value);
-    
-    window.location.href = localStorage.getItem('view');
+  localStorage.setItem("view", view.value);
+
+  window.location.href = localStorage.getItem("view");
 }
