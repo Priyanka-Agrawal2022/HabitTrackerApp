@@ -7,7 +7,7 @@
 #habits-container ul #days {
   padding: 5px;
   margin: 5px;
-  margin-left: 20%;
+  margin-left: 240px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -58,4 +58,17 @@
 
 #habits-container ul .habit .delete {
   color: black;
+}
+
+#warning {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #habits-container {
+    display: none;
+  }
+  #warning {
+    display: block;
+  }
 }

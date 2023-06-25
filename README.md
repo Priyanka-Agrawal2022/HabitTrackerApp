@@ -14,6 +14,7 @@ A fullstack habit tracker app built with Nodejs and Ejs where we can define habi
 - A user can toggle between the three (above mentioned) statuses of a habit anytime.
 - A user is able to change the status of any of the previous days i.e. yesterday, day before yesterday or any previous 6 days as well.
 - A user is able to update the description of a habit.
+- A user is able to delete a habit.
 - A navbar containing a dropdown to toggle between daily and weekly views and an add button to add a new habit.
 
 ### **Tech Stack**
