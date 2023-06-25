@@ -94,7 +94,7 @@ module.exports.delete = async function (req, res) {
   }
 };
 
-// update status
+// update status of today
 module.exports.updateStatus = async function (req, res) {
   try {
     const habitId = req.query.id;
@@ -117,7 +117,7 @@ module.exports.updateStatus = async function (req, res) {
   }
 };
 
-// update status
+// update status of a particular week day
 module.exports.updateWeeklyStatus = async function (req, res) {
   try {
     const habitId = req.query.id;
@@ -142,6 +142,7 @@ module.exports.updateWeeklyStatus = async function (req, res) {
   }
 };
 
+// update habit description
 module.exports.update = async function (req, res) {
   try {
     const habitId = req.query.id;

@@ -1,14 +1,13 @@
+// function to set the value of hidden input element
+// to be sent to controller to handle the view display
 function setHidden() {
   let hidden = document.querySelector("#hidden");
-  let view = document.querySelector("#view");
-
   hidden.value = localStorage.getItem("view");
-
-  console.log(view);
 }
 
 setHidden();
 
+// function to redirect to the previous view
 function goBack() {
   let view = document.querySelector("#view");
 

@@ -1,3 +1,4 @@
+// function to update status of a habit on a particular week day in UI and in DB
 function setStatus(status) {
   const habitId = status.id;
   const day = status.previousElementSibling.value;
@@ -14,6 +15,7 @@ function setStatus(status) {
     .catch((err) => console.log("Error: ", err));
 }
 
+// making view dropdown value and habit status persistent on page reload
 window.onload = () => {
   let viewRoute = localStorage.getItem("view");
 
@@ -61,6 +63,7 @@ window.onload = () => {
   }
 };
 
+// function to set color corresponding to habit status
 function setStatusColor() {
   let habits = document.querySelectorAll(".habit");
 

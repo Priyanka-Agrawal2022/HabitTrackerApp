@@ -1,3 +1,4 @@
+// function to update status of a habit in UI and in DB
 function setStatus() {
   let statuses = document.querySelectorAll(".status");
 
@@ -16,6 +17,7 @@ function setStatus() {
   }
 }
 
+// making view dropdown value and habit status persistent on page reload
 window.onload = () => {
   let view = document.querySelector("#view");
 
@@ -60,6 +62,7 @@ window.onload = () => {
   }
 };
 
+// function to set color corresponding to habit status
 function setStatusColor() {
   let habits = document.querySelectorAll(".habit");
 
