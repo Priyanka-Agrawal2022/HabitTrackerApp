@@ -65,7 +65,7 @@ module.exports.addHabit = async function (req, res) {
   });
 };
 
-// create a habit & render the updated daily view
+// create a habit & redirect back to the previous view
 module.exports.create = async function (req, res) {
   try {
     await Habit.create({
