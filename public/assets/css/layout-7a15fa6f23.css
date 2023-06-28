@@ -1,0 +1,38 @@
+body {
+  font-weight: bold;
+  text-align: center;
+}
+
+body #container {
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: linear-gradient(aliceblue, beige);
+}
+
+body #container nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: black;
+}
+
+body #container nav #view {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body #container nav #view option {
+  font-weight: bold;
+}
+
+body #container nav #add {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
