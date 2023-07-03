@@ -2,6 +2,8 @@
 
 A fullstack habit tracker app built with Nodejs and Ejs where we can define habits and track them with a maximum 7-day view.
 
+## [**Live Demo**](https://tinyurl.com/ev8xwwpk)
+
 ### **Features**
 
 - Add multiple habits to track like reading a book, going to the gym etc.
