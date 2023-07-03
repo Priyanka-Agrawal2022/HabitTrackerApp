@@ -16,3 +16,4 @@
 ::1 - - [28/Jun/2023:12:07:33 +0000] "GET /js/add_habit.js HTTP/1.1" 404 154 "http://localhost:8000/add-habit" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
 ::1 - - [28/Jun/2023:12:07:37 +0000] "GET /js/weekly.js HTTP/1.1" 404 151 "http://localhost:8000/weekly" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
 ::1 - - [28/Jun/2023:12:07:47 +0000] "GET /js/daily.js HTTP/1.1" 404 150 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+[0mGET /favicon.ico [33m404[0m 2.226 ms - 150[0m
